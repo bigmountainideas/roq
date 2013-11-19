@@ -23,3 +23,9 @@ TODO:
 * Async file reads of templates, modules, controllers and models
 * Async compiling and execution of templates
 * Compiled template caching
+
+
+
+License
+===
+Roq Platform is released under the MIT license.
