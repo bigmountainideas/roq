@@ -1,0 +1,56 @@
+{
+  "name" : "roq",
+  "version" : "0.1.0",
+  "description" : "Web application development platform and CMS.",
+  "author" : "Jovan Alleyne <jovan@bigmountainideas.com>",
+  "contributors": [
+    {
+      "name": "Jovan Alleyne",
+      "email": "jovan@bigmountainideas.com"
+    }
+  ],
+  "dependencies" : {
+    "express" : "3.4.x",
+    "handlebars" : "1.0.x",
+    "underscore" : "1.5.x",
+    "node-polyglot": "0.3.0",
+    "less" : "*"
+  },
+  "keywords": [
+    "express",
+    "framework",
+    "platform",
+    "web",
+    "rest",
+    "app",
+    "api"
+  ],
+  "repository": "git://github.com/bigmountainideas/roq",
+  "main": "index",
+  "bin": {
+    "roq": "./bin/roq"
+  },
+  "engines": {
+    "node": "*"
+  },
+  "scripts": {
+    "test": "make test"
+  },
+  "devDependencies": {
+      "grunt": "~0.4.1",
+      "grunt-jslint": "~1.0.0",
+      "grunt-shell": "~0.3.1",
+      "grunt-contrib-watch": "~0.5.3",
+      "grunt-bump": "~0.0.11",
+      "grunt-contrib-clean": "~0.5.0",
+      "grunt-contrib-copy": "~0.4.1",
+      "grunt-contrib-compress": "~0.5.2",
+      "grunt-contrib-concat": "~0.3.0",
+      "grunt-contrib-uglify": "~0.2.4",
+      "grunt-groc": "~0.3.0",
+      "grunt-mocha-cli": "~1.0.6",
+      "should": "~1.2.2",
+      "mocha": "~1.12.0",
+      "supertest" : "~0.8.1"
+  }
+}
