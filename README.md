@@ -7,7 +7,7 @@ roq
 Web application development platform and CMS build on node.js, express and handlebars.
 
 
-# Components:
+## Components:
 
 Roq: Development platform
   -- Pebbles: Data files
@@ -17,23 +17,23 @@ Chisel: CMS
 Cronica: Deployment and versioning
 
 
-# INSTALL:
+## Install:
 
     npm install roq -g
 
 
-# SCAFFOLD:
+## Scaffold:
 
     roq mynewroqapp.com
 
 
-# TEST:
+## Test:
 
     npm test
 or
     make test
 
-# TODO:
+## ToDo:
 
 * Client library dependencies
 * Client library optimizations
@@ -53,13 +53,12 @@ or
 * Integrate handlebars partials into modules
 
 
-# BUILT ON
+## Built On
 
 * [Express 3.0](http://expressjs.com)
 * [Handlebars 1.1.2](http://handlebarsjs.com/)
-* [Handlebars 1.1.2](http://handlebarsjs.com/)
 
 
-# License
+## License
 
 Roq Platform is released under the MIT license.

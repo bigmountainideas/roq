@@ -1,8 +1,8 @@
-var i18n = require('../lib/i18n')
-  , request = require('supertest');
+//var i18n = require('../lib/i18n')
+  //, request = require('supertest');
   
   
-describe('', function(){
+/*describe('', function(){
   it('should define', function(done){
     
     
@@ -14,3 +14,4 @@ describe('', function(){
 
 
 
+*/

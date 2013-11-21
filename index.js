@@ -17,7 +17,7 @@
 /**
  * ======== Module dependencies ============ */
 
-var c = require('./lib/common')
+var common = require('./lib/common')
   , pkg = require('./package.json')
   , util = require('util')
   , fs = require('fs');
