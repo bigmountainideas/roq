@@ -1,7 +1,6 @@
-var app = require('../test_app/app')
+var server = require('../test_app/app')
   , request = require('supertest')
   , serverURI = 'http://localhost:8709'
-  , server
 ;
 
 describe('GET /en-CA', function(){
