@@ -22,7 +22,6 @@ describe('GET /404', function(){
     .end(function(err, res){
       res.should.have.status(404);
       done();
-      server.close();
     })
   })
 })
