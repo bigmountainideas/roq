@@ -31,7 +31,7 @@
     "roq": "./bin/roq"
   },
   "engines": {
-    "node": "*"
+    "node": ">0.10.2"
   },
   "scripts": {
     "test": "make test"
