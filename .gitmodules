@@ -1,6 +1,6 @@
 [submodule "test_app"]
 	path = test_app
 	url = https://github.com/bigmountainideas/roq-sample-app.git
-[submodule "roq-template"]
-	path = roq-template
+[submodule "roq-app-template"]
+	path = roq-app-template
 	url = https://github.com/bigmountainideas/grunt-init-roq.git
