@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Edit Page - {{page.title}}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="/__chisel__/css/normalize.css">
+    <link rel="stylesheet" href="/__chisel__/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/__chisel__/css/fontawesome.min.css">
+    <link rel="stylesheet" href="/__chisel__/css/chisel.min.css">
+    <script src="/__chisel__/js/vendor/modernizr-2.7.0.min.js"></script>
+  </head>
+  <body>
+    <!--[if lt IE 8]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    
+    <div id="main">
+    
+      <div id="editPanel">
+        
+        <ul class="nav nav-pills">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">Profile</a></li>
+          <li><a href="#">Messages</a></li>
+        </ul>
+        
+      </div>
+      <iframe src="{{page.url}}" id="pageFrame" seamless class="move-aside"></iframe>
+    
+    </div>
+    
+    <script src="/__chisel__/js/vendor/jquery-1.10.2.min.js"></script>
+    <script src="/__chisel__/js/chisel.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,204 @@
+#!/usr/bin/env node
+
+/**
+ * Module dependencies.
+ */
+
+var fs = require('fs')
+  , os = require('os')
+  , path = require('path');
+  , program = require('commander')
+  , pkg = require('../package.json')
+  , version = pkg.version
+  , colors = require('colors')
+  , gruntinit = require('grunt-init')
+;
+
+
+
+
+
+
+
+//
+colors.setTheme({
+  input : 'grey',
+  verbose : 'cyan',
+  prompt : 'grey',
+  info : 'green',
+  data : 'grey',
+  help : 'cyan',
+  warn : 'yellow',
+  debug : 'blue',
+  error : 'red'
+});
+
+
+
+
+
+/**
+ * command to create application stub.
+ *
+ */
+
+program
+  .command('create')
+  .description('create roq application structure')
+  .option('-d, --appdir [dir]', 'destination directory', process.cwd())
+  .option('-n, --name [domain]', 'domain name')
+  .action(function(options){
+    
+    //
+    /*var exec = require('child_process').exec;
+
+
+
+    var config = {
+      domains : [
+        'myroqapp.com',
+        'www.myroqapp.com'
+      ],
+      app_name : 'myroqapp',
+      app_port : 8080,
+      
+      ignore : [
+        '.DS_Store',
+        'node_modules'
+      ]
+    };
+    
+
+
+    // normalize directory property
+    options.appdir = path.resolve( options.appdir);
+    
+      
+    function appInit(){
+      createAppStructure();
+      gitInit();
+      npmInit();
+    }
+
+
+    // create application structure
+    function createAppStructure(){
+      console.log(('[info] creating app @ '+options.appdir).info);
+      
+      
+      // create folders
+      files.mkdir( options.appdir+'/app/routes');
+      files.mkdir( options.appdir+'/app/views');
+      files.mkdir( options.appdir+'/app/models');
+      files.mkdir( options.appdir+'/app/static/css');
+      files.mkdir( options.appdir+'/app/static/fonts');
+      files.mkdir( options.appdir+'/app/static/img');
+      files.mkdir( options.appdir+'/app/static/js/vendor');
+      
+      
+      // create app file
+      files.render(
+        __dirname+'/app.js',
+        options.appdir+'/app.js',
+        config
+      );
+      
+      // create package definition
+      files.render(
+        __dirname+'/package.json',
+        options.appdir+'/package.json',
+        config
+      );
+      
+      // create nginx config
+      files.render(
+        __dirname+'/nginx.conf',
+        options.appdir+'/'+config.domains[0]+'.conf',
+        config
+      );
+      
+      // write gitignore file
+      files.write(
+        config.ignore.join(os.EOL),
+        options.appdir+'/.gitignore'
+      );
+      */
+      
+      
+      /*
+      
+http://www.initializr.com/builder?boot-hero&jquerymin&h5bp-iecond&h5bp-chromeframe&h5bp-analytics&h5bp-favicon&h5bp-appletouchicons&modernizrrespond&izr-emptyscript&boot-css&boot-scripts
+      
+      */
+      
+      
+    }
+    
+    
+    
+    /*
+    // init git repo
+    function gitInit(){
+      console.log('[info] initializing git repo'.info);
+      exec('git init '+options.appdir, function(err, stdout, stderr){
+        console.log(stdout.debug);
+        if (err !== null) console.log(('[error] '+err).error);
+      });
+      
+    }
+    
+    
+    // init npm
+    function npmInit(){
+      console.log('[info] installing npm packages'.info);
+      exec('cd '+options.appdir+'&&npm install', function(err, stdout, stderr){
+        console.log(stdout.debug);
+        if (err !== null) console.log(('[error] '+err).error);
+      });
+    }
+    
+    
+
+    // create application root
+    files.mkdir(
+      options.appdir,
+      appInit
+    );*/
+
+  });
+  
+  
+  
+/**
+ * command to deploy application accross server environments.
+ *
+ */
+program
+  .command('deploy [env]')
+  .description('deploy application to configured environments')
+  .action(function(options){
+
+
+  });
+
+
+
+
+
+
+
+
+/**
+ * Process application vars
+ */
+
+
+program
+  .version(version)
+  .parse(process.argv);
+
+
+
+
+
+
